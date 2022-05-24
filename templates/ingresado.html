@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+
+  {% block heading %}
+    Bienvenido
+  {% endblock %}
+
+  {%block body%}
+    <p>Yo soy {{ name }} {{ lname }}.</p> <br>
+    <p>Mi e-mail: {{mail}} </p> <br>
+    <p>Mi número: {{number}}</p> <br>
+    <p>Nací el {{fecha}}</p> <br>
+  {% endblock %}

@@ -1,0 +1,20 @@
+{%extends "layout.html"%}
+
+  {% block heading %}
+    
+  {% endblock %}
+
+  {%block body%}
+  <div id="datos">
+    <h1>Información</h1>
+    <form action="{{ url_for('datos') }}" method="post">
+      <input type="text" name="nombre" placeholder="Nombres">
+      <input type="text" name="apellidos" placeholder="Apellidos">
+      <input type="email" name="mail" placeholder="Email">
+      <input type="number" name="numero" placeholder="Teléfono">
+      <input type="date" name="fecha">
+      <input type="submit">
+      
+    </form>
+  </div>
+  {% endblock %}
